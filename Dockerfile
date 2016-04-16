@@ -1,5 +1,7 @@
 # This for mono-opt under ubuntu 14.04.2 
-FROM ubuntu 
+FROM ubuntu
+RUN apt-get update
+RUN apt-get install -y --force-yes openssh-server wget
 wget http://www.dwhd.org/wp-content/uploads/2015/07/vlmcsd-svn812-2015-08-30-Hotbird64.zip
 #http://forums.mydigitallife.info/threads/50234-Emulated-KMS-Servers-on-non-Windows-platforms
 unzip -q vlmcsd-svn812-2015-08-30-Hotbird64.zip -d /usr/local/
